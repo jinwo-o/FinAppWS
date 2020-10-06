@@ -1,3 +1,4 @@
-Stock Name,Symbol,Number of Shares,Average Price,Current Price,TotalValue
-Apple,AAPL,1,250,500,500
-Zoom,ZM,3,120,270,810
+Stock Name,Symbol,100,Average Price,Current Price,TotalValue
+Apple,AAPL,10,93,116,1170
+Appian,APPN,6,50,67,402
+Apron,APRN,30,7,8,210
