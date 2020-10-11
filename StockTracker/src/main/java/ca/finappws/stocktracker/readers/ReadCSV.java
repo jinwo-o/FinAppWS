@@ -46,9 +46,9 @@ public class ReadCSV {
                 stock.setStockName(values[0]);
                 stock.setSymbol(values[1]);
                 stock.setNumOfShares(Integer.parseInt(values[2]));
-                // stock.setAvgPrice(d.parseDouble(values[3]));
-                // stock.setCurrentPrice(d.parseDouble(values[4]));
-                // stock.setTotalVal(d.parseDouble(values[5]));
+                stock.setAvgPrice(d.parseDouble(values[3]));
+                stock.setCurrentPrice(d.parseDouble(values[4]));
+                stock.setTotalVal(d.parseDouble(values[5]));
                 portfolio.getStocks().add(stock);
             }
         } catch (FileNotFoundException e) {

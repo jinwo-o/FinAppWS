@@ -36,7 +36,7 @@ public class StockTracker {
         Portfolio portfolio = ReadCSV.CSV_Reader(path);
         double totalValue = 0;
         for(Stock stock : portfolio.getStocks()) {
-            double stockTotalValue = stock.getNumOfShares();
+            double stockTotalValue = stock.getTotalVal();
             totalValue = stockTotalValue + totalValue;
         }
 

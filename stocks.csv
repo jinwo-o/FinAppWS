@@ -1,17 +1,3 @@
 Stock Name,Symbol,100,Average Price,Current Price,TotalValue
 Apple,AAPL,10,93,116,1170
-Advanced MD,AMD
-Appian,APPN,6,50,67,402
-Apron,APRN,30,7,8,210
-Bank of Montreal,BMO
-Cineplex,CGX
-CRISPR Technologies,CRSP
-Crowdstrike Holdings,CRWD
-Datadog,DDOG
-Coca-Cola,KO
-MFA,MFA
-Cloudflaire,NET
-Nokia,NOK
-Pintrest,PINS
-QQQ Canadian,QQC.F
-SPCE<SPCE
+Advanced MD,AMD,2,84,85,170

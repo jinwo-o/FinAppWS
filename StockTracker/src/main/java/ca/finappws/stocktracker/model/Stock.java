@@ -47,4 +47,5 @@ public class Stock {
     public void setTotalVal(double totalVal) {
         this.totalVal = totalVal;
     }
-} 
+    
+}
