@@ -16,22 +16,6 @@ public class StockTracker {
         System.out.println("ABC");
 
         String path = "/Users/jin/Work/FinAppWS/stocks.csv";
-        // String line = "";
-
-        // try {
-        //     System.out.println("We here");
-        //     BufferedReader br = new BufferedReader(new FileReader(path));
-
-        //     while((line = br.readLine()) != null) {
-        //         String[] values = line.split(",");
-        //         System.out.println("Stock Name:" + values[0]);
-        //     }
-        // } catch (FileNotFoundException e) {
-        //     e.printStackTrace();
-        // }
-        // } catch (IOException e) {
-        //     e.printStackTrace();
-        // }
 
         Portfolio portfolio = ReadCSV.CSV_Reader(path);
         double totalValue = 0;

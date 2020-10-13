@@ -32,15 +32,11 @@ public class ReadCSV {
         String word = "";
 
         try {
-            // System.out.println("We here");
             BufferedReader br = new BufferedReader(new FileReader(filename));
-
+            // Skip first line
+            br.readLine();
             while((word = br.readLine()) != null) {
                 String[] values = word.split(",");
-                // Skip first line
-                if (values[0] == "Stock Name") {
-                    break;
-                }
                 System.out.println("Stock Name:" + values[0]);
                 Stock stock = new Stock();
                 stock.setStockName(values[0]);
@@ -54,19 +50,7 @@ public class ReadCSV {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
-        // final CSVParser parser = new CSVParserBuilder().withSeparator(',').build();
-        // final CSVReader reader = new CSVReaderBuilder(new FileReader(filename)).withSkipLines(1).withCSVParser(parser).build();
-        // while ((line = reader.readNext()) != null) {
-        //     Stock stock = new Stock();
-        //     stock.setStockName(line[0]);
-        //     stock.setSymbol(line[1]);
-        //     stock.setNumOfShares(Integer.parseInt(line[2]));
-        //     stock.setAvgPrice(d.parseDouble(line[3]));
-        //     stock.setCurrentPrice(d.parseDouble(line[4]));
-        //     stock.setTotalVal(d.parseDouble(line[5]));
-        //     portfolio.getStocks().add(stock);
-        // }
+        
         return portfolio;
     }
 
